@@ -3,52 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>morich | 津田宗利 様様専用キャリアサイト</title>
+    <title>津田宗利 様 | 特別選考案内 - morich</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; background-color: #fafafa; color: #333; margin: 0; padding: 0; }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
         .morich-red { color: #E60012; }
         .bg-morich-red { background-color: #E60012; }
         .border-morich-red { border-color: #E60012; }
-        .corporate-overview { background-color: #f1f5f9; border-radius: 4px; }
-        .morich-highlight { border: 2px solid #E60012; background-color: #fffafa; position: relative; }
-        .morich-highlight::before { content: "morichオススメPoint"; position: absolute; top: -12px; left: 20px; background-color: #E60012; color: white; padding: 2px 14px; font-weight: bold; font-size: 0.8rem; border-radius: 20px; }
-        .nav-link:hover { color: #E60012; text-decoration: underline; }
+        
+        .corporate-overview {
+            background-color: #F3F4F6;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .morich-highlight {
+            border: 2px solid #E60012;
+            background-color: #FFF5F5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            width: 30%;
+            text-align: left;
+            padding: 8px 0;
+            font-weight: bold;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        td {
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .job-section {
+            border-top: 2px solid #333;
+            margin-top: 3rem;
+            padding-top: 2rem;
+        }
+        
+        .nav-anchor {
+            transition: color 0.2s;
+        }
+        .nav-anchor:hover {
+            color: #E60012;
+        }
     </style>
 </head>
-<body class="pb-20">
-    <header class="bg-white border-b-4 border-morich-red sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
-            <img src="morich_logo.jpg" alt="morich logo" class="h-10 mb-4 md:mb-0">
-            <h1 class="text-xl font-bold text-gray-800">津田宗利 様様専用 特別提案サイト</h1>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <img src="morich_logo.jpg" alt="morich" class="h-10">
+            <div class="text-right mt-2 md:mt-0">
+                <span class="text-gray-600 text-sm">Candidate:</span>
+                <span class="text-lg font-bold ml-1">津田宗利 様</span>
+            </div>
+        </div>
+        <div class="bg-gray-100 border-t border-b overflow-x-auto whitespace-nowrap">
+            <div class="max-w-4xl mx-auto px-4 py-2 flex gap-6 text-sm font-bold">
+                <a href="#co1" class="nav-anchor">1. カイテク</a>
+                <a href="#co2" class="nav-anchor">2. カケハシ</a>
+                <a href="#co3" class="nav-anchor">3. ユーザベース</a>
+                <a href="#co4" class="nav-anchor">4. カンム</a>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 mt-10 max-w-5xl">
-        <nav class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 mb-12">
-            <h2 class="text-lg font-black mb-4 border-b pb-2">ご紹介企業リスト</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <a href="#caitech" class="font-bold text-gray-600 nav-link py-1">1. カイテク株式会社</a>
-                <a href="#kakehashi" class="font-bold text-gray-600 nav-link py-1">2. 株式会社カケハシ</a>
-                <a href="#uzabase" class="font-bold text-gray-600 nav-link py-1">3. 株式会社ユーザベース</a>
-                <a href="#kanmu" class="font-bold text-gray-600 nav-link py-1">4. 株式会社カンム</a>
+    <main class="max-w-4xl mx-auto bg-white shadow-lg min-h-screen">
+        
+        <section id="co1" class="p-8 md:p-12 border-b-8 border-gray-100 scroll-mt-20">
+            <div class="mb-4">
+                <span class="inline-block bg-black text-white text-xs font-bold px-3 py-1 rounded mr-2">N-1</span>
+                <span class="inline-block bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">注目企業</span>
             </div>
-        </nav>
+            
+            <h1 class="text-3xl md:text-4xl font-black mb-6 leading-tight">カイテク株式会社</h1>
 
-        <section id="caitech" class="mb-32 scroll-mt-24">
-            <div class="mb-6">
-                <span class="inline-block bg-gray-800 text-white text-[10px] px-3 py-1 rounded font-bold mb-3 tracking-wider">IPO準備 / N-1期</span>
-                <h2 class="text-3xl md:text-5xl font-black morich-red tracking-tighter mb-4">カイテク株式会社</h2>
+            <div class="corporate-overview">
+                <p class="text-xs font-bold text-gray-500 mb-4 tracking-widest uppercase">Corporate Overview</p>
+                <table>
+                    <tr><th>本社住所</th><td>〒160-0022 東京都新宿区新宿1丁目23番1号 THE PORTAL 新宿御苑 2F</td></tr>
+                    <tr><th>設立</th><td>2018年2月9日</td></tr>
+                    <tr><th>従業員数</th><td>約52名（役員含む）</td></tr>
+                    <tr><th>上場区分</th><td>未上場（IPO準備中：N-1期）</td></tr>
+                </table>
             </div>
-            <div class="corporate-overview p-6 mb-10 shadow-inner">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Corporate Overview</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-                    <div><p class="text-xs text-gray-500 font-bold mb-1">本社住所</p><p class="text-sm font-bold text-gray-800">〒160-0022 東京都新宿区新宿1丁目23番1号 THE PORTAL 新宿御苑 2F</p></div>
-                    <div><p class="text-xs text-gray-500 font-bold mb-1">設立</p><p class="text-sm font-bold text-gray-800">2018年2月9日</p></div>
-                    <div><p class="text-xs text-gray-500 font-bold mb-1">従業員数</p><p class="text-sm font-bold text-gray-800">約52名（役員含む）</p></div>
-                    <div><p class="text-xs text-gray-500 font-bold mb-1">上場区分</p><p class="text-sm font-bold text-gray-800">未上場（IPO準備中 / N-1期）</p></div>
+
+            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                <p>「2050年に世界一幸せな超高齢社会をつくる」というビジョンのもと、介護・医療領域の人材不足解消に挑む2018年設立のHRテック企業で、介護・医療・看護領域に特化した単発・スポットワークマッチングサービス「カイテク」を展開しています。</p>
+                <p>慢性的な人材不足という社会構造課題に対し、有資格者限定という独自モデルでアプローチしている点や勤務後5分以内の即時ペイメントや、足りないシフト枠をスポットワークと連携する仕組みなど、現場起点のプロダクト開発を進め、導入事業所は約2.1万、アプリDLは約110万人まで拡大。直近3期連続黒字、営業利益率10％超と、成長性と収益性を両立している点も特徴でIPOを目指しています。</p>
+                <p>デロイト トーマツ グループが2026年1月に発表した「Technology Fast 50 2025 Japan」において、過去3決算期の収益（売上高）に基づく成長率1位を獲得されています。</p>
+            </div>
+
+            <div class="morich-highlight">
+                <h3 class="text-xl font-bold morich-red mb-4">morichオススメPoint</h3>
+                <div class="text-sm font-bold leading-loose">
+                    ★IPO準備フェーズ：N-1期<br>
+                    ★社長リレーション<br><br>
+                    2050年に「世界一幸せな超高齢社会」を目指す、成長著しい企業です！<br>
+                    直近3期連続で黒字化、成長率1,616％を記録しTechnology Fast 50で見事１位を受賞！<br>
+                    「埋蔵労働時間」の掘り起こし、有資格者100％の担保、行政連携という3つの強みで、介護人材市場の流動化を促進するインフラとしてのポジションを築きつつあります。
                 </div>
             </div>
-            <div class="prose max-w-none text-gray-700 leading-8 mb-12 text-lg">
-                <p>「2050年に世界一幸せな
+
+            <div class="mt-8">
+                <h4 class="font-bold mb-2">代表プロフィール</h4>
+                <p class="font-bold">代表取締役社長 武藤 高史氏</p>
+                <p class="text-sm text-gray-600 mt-2">1988年生まれ。エムスリー株式会社などを経て、2018年に同社を創業。介護・医療分野の新しい働き方を提案する起業家として注目されています。</p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4 text-sm font-bold">
+                <a href="https://corp.caitech.co.jp/" target="_blank" class="text-blue-600 hover:underline">▶︎ 企業サイト</a>
+                <a href="https://prtimes.jp/main/html/rd/p/000000032.000043426.html" target="_blank" class="text-blue-600 hover:underline">▶︎ Technology Fast 50 1位 プレスリリース</a>
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vSQUpcwF2n-OuSsajkugW0ixfr_QI5FPRfTt70YPQU7u5XTiwUZitHswzrjc6GnOJvzJ58HcQhQI27_/pub?start=false&loop=false&delayms=3000&slide=id.g3884d2b72ef_0_701" target="_blank" class="text-blue-600 hover:underline">▶︎ 会社資料</a>
+            </div>
+
+            <div class="job-section">
+                <h3 class="text-2xl font-bold mb-6">JOB情報</h3>
+                <div class="bg-white border-l-4 border-black p-6 shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">マーケティング（マーケティング責任者）</h4>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="font-bold border-b pb-1 mb-2">業務内容</p>
+                            <p class="whitespace-pre-wrap text-gray-700">既存プロダクトを中心としたマーケティング責任者候補として、市場・競合調査を通じたプロダクト企画やグロースハック（定量定性分析、施策設計）、PdMと連携したロードマップ設計などを担当いただきます。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div><p class="font-bold">勤務地</p><p>東京</p></div>
+                            <div><p class="font-bold">リモート</p><p>ハイブリッド勤務</p></div>
+                            <div><p class="font-bold">副業</p><p>条件によって「可」</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="co2" class="p-8 md:p-12 border-b-8 border-gray-100 scroll-mt-20">
+            <div class="mb-4">
+                <span class="inline-block bg-black text-white text-xs font-bold px-3 py-1 rounded mr-2">SaaS</span>
+                <span class="inline-block bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">医療DX</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社カケハシ</h1>
+
+            <div class="corporate-overview">
+                <p class="text-xs font-bold text-gray-500 mb-4 tracking-widest uppercase">Corporate Overview</p>
+                <table>
+                    <tr><th>本社住所</th><td>〒105-0003 東京都港区西新橋二丁目8番6号 住友不動産日比谷ビル5階</td></tr>
+                    <tr><th>設立</th><td>2016年3月</td></tr>
+                    <tr><th>従業員数</th><td>300名以上（平均年齢35.4歳）</td></tr>
+                    <tr><th>上場区分</th><td>未上場（累計資金調達149億円）</td></tr>
+                </table>
+            </div>
+
+            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                <p>医療プラットフォーマーとしての地固めをし、IPO準備をすすめている企業です。薬局のシステムをSaaSで提供（ムスビというプロダクト、電子薬歴システム）。2017.8リリースして以来、1万以上の店舗の商談が進んでいます。</p>
+                <p>『Musubi AI在庫管理』では、患者・医薬品ごとに、AIが需要予測し、在庫管理の課題を解決。例えば、薬歴40人分の記入に2時間かかるところをシステム利用で20分に短縮し、空いた時間で医学知識を生かす仕事が可能にする等。社内はピラミッド構造ではなくロール、プロジェクト制でジュニアメンバーもリーダーを担う風土です。</p>
+            </div>
+
+            <div class="morich-highlight">
+                <h3 class="text-xl font-bold morich-red mb-4">morichオススメPoint</h3>
+                <div class="text-sm font-bold leading-loose">
+                    ★過去入社実績アリ<br><br>
+                    「日本の医療体験を、しなやかに。」をミッションに掲げ、薬局体験アシスタント「Musubi」を始め、多角的なSaaSプロダクトを展開。リリースからわずか6年で全国7,000店以上の薬局に導入され、市場シェアは15%超を誇ります。<br>
+                    残業を前提としない働き方、遠隔地でもフルリモートで就業でき、子育て社員も働きやすい柔軟な環境も魅力です。
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4 text-sm font-bold">
+                <a href="https://www.kakehashi.life/corporate.html" target="_blank" class="text-blue-600 hover:underline">▶︎ 企業サイト</a>
+                <a href="https://speakerdeck.com/kakehashi/company-information-materials" target="_blank" class="text-blue-600 hover:underline">▶︎ 会社説明資料</a>
+            </div>
+
+            <div class="job-section">
+                <h3 class="text-2xl font-bold mb-6">JOB情報</h3>
+                <div class="bg-white border-l-4 border-black p-6 shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">【SaaS】新規事業責任者 / プロダクト責任者 候補</h4>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="font-bold border-b pb-1 mb-2">業務内容</p>
+                            <p class="whitespace-pre-wrap text-gray-700">2025年度より新たに取り組む事業およびプロダクトの立ち上げをリードいただきます。事業計画の立案、バリュープロポジションの策定、アライアンス戦略の立案から実行まで一気通貫で担うミッションです。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div><p class="font-bold">勤務地</p><p>東京</p></div>
+                            <div><p class="font-bold">リモート</p><p>フルリモート可</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="co3" class="p-8 md:p-12 border-b-8 border-gray-100 scroll-mt-20">
+            <div class="mb-4">
+                <span class="inline-block bg-black text-white text-xs font-bold px-3 py-1 rounded mr-2">グローバル</span>
+                <span class="inline-block bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">構造改革中</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社ユーザベース</h1>
+
+            <div class="corporate-overview">
+                <p class="text-xs font-bold text-gray-500 mb-4 tracking-widest uppercase">Corporate Overview</p>
+                <table>
+                    <tr><th>本社住所</th><td>〒100-0005 東京都千代田区丸の内2-5-2 三菱ビル</td></tr>
+                    <tr><th>設立</th><td>2008年4月1日</td></tr>
+                    <tr><th>従業員数</th><td>連結 1,000名以上</td></tr>
+                    <tr><th>上場区分</th><td>未上場（再上場を目指すフェーズ）</td></tr>
+                </table>
+            </div>
+
+            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                <p>『経済情報の力で、誰もがビジネスを楽しめる世界をつくる』をパーパスとして掲げ、「NewsPicks」や「Speeda」をはじめとし、経済情報をB2C・B2B向けに届けるプラットフォームビジネスを展開しています。</p>
+                <p>2024年1月にはSaaS組織を大きく変革。プロダクト縦割り組織から、顧客ニーズを起点とした横断的な提案ができる組織への転換を行い、現在は顧客ニーズを起点としたサービスや事業をつくる事に挑戦しています。日本発のデファクトになる経済情報インフラづくりを目指すグローバル企業です。</p>
+            </div>
+
+            <div class="morich-highlight">
+                <h3 class="text-xl font-bold morich-red mb-4">morichオススメPoint</h3>
+                <div class="text-sm font-bold leading-loose">
+                    同社は2023年頭に非上場化し、今後3年〜5年での再上場を目指し、構造改革を実施している最中です。<br>
+                    経営コンサルを内製化し「経営スピードを上げる」情報プラットフォームをつくっています。<br>
+                    ※複数ポジションで採用をされていますので、本ポジションに限らず同社にご興味をお持ちでしたら、ぜひお話を進めさせてくださいませ！
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4 text-sm font-bold">
+                <a href="https://www.uzabase.com/" target="_blank" class="text-blue-600 hover:underline">▶︎ 企業サイト</a>
+                <a href="https://www.uzabase.com/jp/careers/?section=hr-handbook" target="_blank" class="text-blue-600 hover:underline">▶︎ HR Handbook</a>
+                <a href="https://www.youtube.com/watch?v=uGqnWykq-uM" target="_blank" class="text-blue-600 hover:underline">▶︎ オフィス紹介動画</a>
+            </div>
+
+            <div class="job-section">
+                <h3 class="text-2xl font-bold mb-6">JOB情報</h3>
+                <div class="bg-white border-l-4 border-black p-6 shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">SaaS_オープンポジション</h4>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="font-bold border-b pb-1 mb-2">概要</p>
+                            <p class="whitespace-pre-wrap text-gray-700">スピーダ事業全体としての成長加速・顧客価値の最大化を目指し、複数プロダクトを横断した組織への変革を進めています。セールス、マーケティング、カスタマーサクセス等、各Domainにて最適なポジションを提案します。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div><p class="font-bold">勤務地</p><p>東京</p></div>
+                            <div><p class="font-bold">リモート</p><p>フルリモート可</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="co4" class="p-8 md:p-12 border-b-8 border-gray-100 scroll-mt-20">
+            <div class="mb-4">
+                <span class="inline-block bg-black text-white text-xs font-bold px-3 py-1 rounded mr-2">MUFG</span>
+                <span class="inline-block bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">FinTech</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社カンム</h1>
+
+            <div class="corporate-overview">
+                <p class="text-xs font-bold text-gray-500 mb-4 tracking-widest uppercase">Corporate Overview</p>
+                <table>
+                    <tr><th>本社住所</th><td>〒150-0013 東京都渋谷区恵比寿1丁目20-18 三富ビル新館 4階</td></tr>
+                    <tr><th>設立</th><td>2011年1月14日</td></tr>
+                    <tr><th>従業員数</th><td>約50〜100名</td></tr>
+                    <tr><th>上場区分</th><td>未上場（三菱UFJ銀行 連結子会社）</td></tr>
+                </table>
+            </div>
+
+            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                <p>「お金の新しい選択肢をつくる」をミッションに掲げ、日本の銀行機能のアップデートを目指すFinTech企業です。1,000万DL超の「バンドルカード」や「Pool」を展開しています。</p>
+                <p>2023年3月には三菱UFJ銀行の連結子会社となり、新領域での事業拡大を目指しています。IPOを目指し、全社的な中長期の事業戦略を主導いただける方を求めています。</p>
+            </div>
+
+            <div class="morich-highlight">
+                <h3 class="text-xl font-bold morich-red mb-4">morichオススメPoint</h3>
+                <div class="text-sm font-bold leading-loose">
+                    ★IPO準備中<br>
+                    ★役員リレーション<br><br>
+                    売上右肩上がりで高い成長率を誇り、2022年度黒字化達成、2023年度には営業利益を大きく計上されており、フィンテックスタートアップとしては異例な安定した財務基盤があります。<br>
+                    三菱UFJ銀行との提携により、今後同社の巨大な顧客基盤も活かしながら、更なる成長が見込める非常に面白いフェーズです。
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4 text-sm font-bold">
+                <a href="https://kanmu.co.jp/" target="_blank" class="text-blue-600 hover:underline">▶︎ 企業サイト</a>
+                <a href="https://prtimes.jp/main/html/rd/p/000000084.000012797.html" target="_blank" class="text-blue-600 hover:underline">▶︎ 三菱UFJ銀行 提携リリース</a>
+                <a href="https://youtu.be/hzvsJVPRE6M" target="_blank" class="text-blue-600 hover:underline">▶︎ サービス紹介動画</a>
+            </div>
+
+            <div class="job-section">
+                <h3 class="text-2xl font-bold mb-6">JOB情報</h3>
+                <div class="bg-white border-l-4 border-black p-6 shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">オープンポジション</h4>
+                    <div class="space-y-6 text-sm">
+                        <p class="whitespace-pre-wrap text-gray-700">既存のtoC事業をグロースしていけるミドルマネジメント層や、新規領域を牽引できる方を募集しております。</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div><p class="font-bold">勤務地</p><p>東京</p></div>
+                            <div><p class="font-bold">リモート</p><p>フルリモート可</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <img src="morich_logo.jpg" alt="morich" class="h-8 mx-auto mb-6 brightness-0 invert">
+            <p class="text-sm opacity-50">&copy; morich Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
